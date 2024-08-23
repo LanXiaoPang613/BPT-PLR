@@ -4,12 +4,12 @@
 
 *Qian Zhang, Ge Jin, Yi Zhu, Hongjian Wei, Qiu Chen*
 
-[[Entropy]](https://doi.org/xxxx)
-[[License: MIT License]](https://github.com/LanXiaoPang613/BPT-PLR/blob/main/LICENSE)
+[Entropy](https://doi.org/10.3390/e26070589)
+[License: MIT License](https://github.com/LanXiaoPang613/BPT-PLR/blob/main/LICENSE)
 
 </h5>
 
-The PyTorch implementation code of the paper, [BPT-PLR: A Balanced Partitioning and Training Framework with Pseudo-Label Relaxed Contrastive Loss for Noisy Label Learning](https://doi.org/xxxx).
+The PyTorch implementation code of the paper, [BPT-PLR: A Balanced Partitioning and Training Framework with Pseudo-Label Relaxed Contrastive Loss for Noisy Label Learning](https://doi.org/10.3390/e26070589).
 
 **Abstract**
 While collecting training data, even with manual verification through experts from crowdsourcing platforms, eliminating incorrect annotations (noisy labels) completely is difficult and expensive. In dealing with datasets that contain noisy labels, over-parameterized deep neural networks (DNN) tend to overfit, leading to poor generalization and classification performance. As a result, noisy label learning (NLL) has received significant attention in recent years. Existing research shows that although DNN eventually fits all training data, they first prioritize fitting clean samples, then gradually overfit to noisy samples. Mainstream methods utilize this characteristic to divide training data but face two issues: class imbalance in the segmented data subsets, and the optimi-zation conflict between unsupervised contrastive representation learning and supervised learning. To address these issues, we propose a Balanced Partitioning and Training framework with Pseudo-Label Relaxed contrastive loss called **BPT-PLR**, which includes two crucial processes: a balanced partitioning process with a two-dimensional Gaussian mixture model (GMM) and a semi-supervised oversampling training process with a pseudo-label relaxed contrastive loss (PLR). The former utilizes both semantic feature information and model prediction results to identify noisy labels, introducing a balancing strategy to maintain class balance in the divided subsets as much as possible. The latter adopts the latest PLR to replace unsupervised contrastive loss, re-ducing optimization conflicts between semi-supervised and unsupervised contrastive losses to improve performance. We validate the effectiveness of BPT-PLR on four benchmark datasets in the NLL field: CIFAR-10/100, Animal-10N, and Clothing1M. Extensive experiments comparing with state-of-the-art methods demonstrate that BPT-PLR can achieve optimal or near-optimal perfor-mance. Source code is released at: https://github.com/LanXiaoPang613/BPT-PLR.
@@ -47,8 +47,8 @@ If you have any questions, do not hesitate to contact zhangqian@jsou.edu.cn
 
 Also, if you find our work useful please consider citing our work:
 
-```bibtex
-xxxx
+```APA
+Zhang, Q.; Jin, G.; Zhu, Y.; Wei, H.; Chen, Q. BPT-PLR: A Balanced Partitioning and Training Framework with Pseudo-Label Relaxed Contrastive Loss for Noisy Label Learning. Entropy 2024, 26, 589. https://doi.org/10.3390/e26070589
 ```
 
 ## Acknowledgement
